@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		142AC858217ABC8C00613A66 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142AC857217ABC8C00613A66 /* AppDelegate.swift */; };
-		142AC85A217ABC8C00613A66 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142AC859217ABC8C00613A66 /* ViewController.swift */; };
+		142AC85A217ABC8C00613A66 /* StopWatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142AC859217ABC8C00613A66 /* StopWatchViewController.swift */; };
 		142AC85D217ABC8C00613A66 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 142AC85B217ABC8C00613A66 /* Main.storyboard */; };
 		142AC85F217ABC9000613A66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 142AC85E217ABC9000613A66 /* Assets.xcassets */; };
 		142AC862217ABC9000613A66 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 142AC860217ABC9000613A66 /* LaunchScreen.storyboard */; };
@@ -28,7 +28,7 @@
 /* Begin PBXFileReference section */
 		142AC854217ABC8C00613A66 /* syncronizedTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = syncronizedTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		142AC857217ABC8C00613A66 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		142AC859217ABC8C00613A66 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		142AC859217ABC8C00613A66 /* StopWatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopWatchViewController.swift; sourceTree = "<group>"; };
 		142AC85C217ABC8C00613A66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		142AC85E217ABC9000613A66 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		142AC861217ABC9000613A66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -78,7 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				142AC857217ABC8C00613A66 /* AppDelegate.swift */,
-				142AC859217ABC8C00613A66 /* ViewController.swift */,
+				142AC859217ABC8C00613A66 /* StopWatchViewController.swift */,
 				142AC85B217ABC8C00613A66 /* Main.storyboard */,
 				142AC85E217ABC9000613A66 /* Assets.xcassets */,
 				142AC860217ABC9000613A66 /* LaunchScreen.storyboard */,
@@ -106,6 +106,7 @@
 				142AC850217ABC8C00613A66 /* Sources */,
 				142AC851217ABC8C00613A66 /* Frameworks */,
 				142AC852217ABC8C00613A66 /* Resources */,
+				14FB879F2196775900B0676C /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -192,12 +193,32 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		14FB879F2196775900B0676C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n swiftlint\nelse\n echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		142AC850217ABC8C00613A66 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				142AC85A217ABC8C00613A66 /* ViewController.swift in Sources */,
+				142AC85A217ABC8C00613A66 /* StopWatchViewController.swift in Sources */,
 				142AC858217ABC8C00613A66 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

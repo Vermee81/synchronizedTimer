@@ -9,7 +9,7 @@
 import XCTest
 @testable import syncronizedTimer
 
-class syncronizedTimerTests: XCTestCase {
+class SyncronizedTimerTests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
